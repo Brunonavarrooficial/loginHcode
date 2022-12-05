@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <h1><a href="https://www.hcode.com.br">Hcode</a></h1>
+      <h1><a href="https://www.hcode.com.br" target="_blank">Hcode</a></h1>
       <nav></nav>
     </header>
 
@@ -20,25 +20,25 @@
         </a>
       </div>
 
-      <form action="/login" method="post">
+      <form action="/login" method="post" id="form-login">
         <div>
           <input
             type="email"
             name="email"
-            id="password"
             placeholder="Digite seu e-mail"
+            id="email"
           />
         </div>
         <div>
           <input
-            type="password"
-            name="password"
-            id="password"
+            type="current-password"
+            name="current-password"
             placeholder="Digite sua senha"
+            id="password"
           />
         </div>
         <div>
-          <button type="submit">Enviar</button>
+          <button id="btn-submit">Enviar</button>
         </div>
       </form>
     </section>
@@ -46,5 +46,6 @@
     <footer>
       <p>Hcode Treinamentos</p>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
